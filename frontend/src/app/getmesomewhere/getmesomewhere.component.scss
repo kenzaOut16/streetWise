@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    overflow: hidden;
+    flex-wrap: wrap-reverse;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+
+      .row-fields {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 100%;
+
+        .datetime {
+          flex: 1;
+        }
+
+        .options {
+          flex: 1;
+        }
+      }
+    }
+
+    > img {
+      width: 50%;
+    }
+  }
+}
